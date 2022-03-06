@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+}
+
+header {
+    width: 99%;
+    height: 100px;
+    background-color: limegreen;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 100px;
+}
+
+aside {
+    color: yellowgreen;
+    width: 215px;
+    padding-top: 50px;
+    padding-left: 10px;
+    font-family: "Comic Sans MS";
+}
+
+aside p {
+    padding: 10px;
+}
+
+article {
+    position: relative;
+    left: 250px;
+    top: -500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 30%;
+    height: 600px;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+h3 {
+    font-family: "Comic Sans MS";
+    font-size: x-small;
+}
+
+.nutritive {
+    height: 100px;
+    width: 100px;
+    flex: 0 0 auto;
+    background-color: papayawhip;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    font-size: medium;
+    text-align: center;
+}
+
+article img {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px limegreen;
+}
+
+.wrapper {
+    position: absolute;
+    width: 100%;
+    height: 1200px;
+    margin: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        width: 100%;
+        height: 1200px;
+    }
+
+    article {
+        top: 50px;
+        left: 0px;
+        width: 50%;
+    }
+
+
+    aside {
+        position: static;
+        width: 50%;
+    }
+
+}
